@@ -29,7 +29,6 @@ log_bash_persistent_history()
 # Stuff to do on PROMPT_COMMAND
 run_on_prompt_command()
 {
-  printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/\~}"
   log_bash_persistent_history
 }
 
