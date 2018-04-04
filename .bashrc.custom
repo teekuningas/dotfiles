@@ -4,6 +4,9 @@ export PATH="/home/zairex/anaconda2/bin:$PATH"
 export MNE_ROOT="/opt/MNE"
 . $MNE_ROOT/bin/mne_setup_sh
 
+# disable system bell
+xset -b
+
 alias grep='LC_ALL=C grep'
 
 alias connect_screen='xrandr --output HDMI2 --mode 1920x1080 --left-of eDP1'
