@@ -2,7 +2,10 @@
 export PATH="/home/zairex/anaconda2/bin:$PATH"
 
 export MNE_ROOT="/opt/MNE"
-. $MNE_ROOT/bin/mne_setup_sh
+. $MNE_ROOT/bin/mne_setup_sh > /dev/null
+
+# Add NoMachine paths
+export PATH="/usr/NX/bin:$PATH"
 
 # disable system bell
 xset -b
