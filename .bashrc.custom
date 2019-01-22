@@ -39,3 +39,6 @@ run_on_prompt_command()
 }
 
 PROMPT_COMMAND="run_on_prompt_command"
+
+# no self-test on beignet, as i am on haswell.
+export OCL_IGNORE_SELF_TEST=1
