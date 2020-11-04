@@ -1,6 +1,3 @@
-# added by Anaconda2 2.4.0 installer
-export PATH="/home/zairex/anaconda2/bin:$PATH"
-
 export MNE_ROOT="/opt/MNE"
 . $MNE_ROOT/bin/mne_setup_sh > /dev/null
 
@@ -41,4 +38,28 @@ run_on_prompt_command()
 PROMPT_COMMAND="run_on_prompt_command"
 
 # no self-test on beignet, as i am on haswell.
-export OCL_IGNORE_SELF_TEST=1
+# export OCL_IGNORE_SELF_TEST=1
+
+# add cgoban alias
+alias cgoban='java -jar /home/zairex/Games/cgoban-h.jar'
+
+
+# setup freesurfer
+export FREESURFER_HOME=/opt/freesurfer
+source $FREESURFER_HOME/SetUpFreeSurfer.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/zairex/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/zairex/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/zairex/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/zairex/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
