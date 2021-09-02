@@ -1,0 +1,6 @@
+# .bashrc
+
+test -r $HOME/.bashrc-custom && source $HOME/.bashrc-custom
+
+# nix tmpdir settings
+alias nix-shell='TMPDIR=/home/erpipehe/tmp nix-shell'
