@@ -16,8 +16,8 @@ alias disconnect_screen='xrandr --output HDMI2 --off'
 alias cgoban='java -jar /home/zairex/Games/cgoban-h.jar'
 
 # setup freesurfer
-export FREESURFER_HOME=/opt/freesurfer
-source $FREESURFER_HOME/SetUpFreeSurfer.sh
+# export FREESURFER_HOME=/opt/freesurfer
+# source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
