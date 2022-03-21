@@ -3,4 +3,8 @@
 test -r $HOME/.bashrc-custom && source $HOME/.bashrc-custom
 
 # nix tmpdir settings
-alias nix-shell='TMPDIR=/home/erpipehe/tmp nix-shell'
+alias nix-shell='TMPDIR=/home/erpipehe/tmp/nix-tmp nix-shell'
+alias nix-build='TMPDIR=/home/erpipehe/tmp/nix-tmp nix-build'
+
+eval "$(starship init bash)"
+
