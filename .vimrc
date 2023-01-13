@@ -48,6 +48,9 @@ inoremap <right> <nop>
 
 " nix syntax highlighting
 au BufRead,BufNewFile *.nix set filetype=nix
-"
+
+" elm syntax highlighting
+au BufRead,BufNewFile *.elm set filetype=elm
+
 " nix syntax highlighting
 au BufRead,BufNewFile *.hcl set filetype=hcl

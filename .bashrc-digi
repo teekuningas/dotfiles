@@ -6,5 +6,10 @@ test -r $HOME/.bashrc-custom && source $HOME/.bashrc-custom
 alias nix-shell='TMPDIR=/home/erpipehe/tmp/nix-tmp nix-shell'
 alias nix-build='TMPDIR=/home/erpipehe/tmp/nix-tmp nix-build'
 
-eval "$(starship init bash)"
+if ! command -v starship &> /dev/null
+then
+  echo "Starship not found. Not running.."
+else
+  eval "$(starship init bash)"
+fi
 
