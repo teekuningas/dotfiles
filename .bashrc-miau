@@ -1,36 +1,13 @@
 test -r $HOME/.bashrc-custom && source $HOME/.bashrc-custom
 
-export MNE_ROOT="/opt/MNE"
-. $MNE_ROOT/bin/mne_setup_sh > /dev/null
-
-# Add NoMachine paths
-export PATH="/usr/NX/bin:$PATH"
-
 # disable system bell
 xset -b
 
-alias connect_screen='xrandr --output HDMI2 --mode 1920x1080 --left-of eDP1'
-alias disconnect_screen='xrandr --output HDMI2 --off'
+alias connect_screen='xrandr --output HDMI-2 --mode 1920x1080 --left-of eDP-1'
+alias disconnect_screen='xrandr --output HDMI-2 --off'
 
 # add cgoban alias
 alias cgoban='java -jar /home/zairex/Games/cgoban-h.jar'
 
-# setup freesurfer
-# export FREESURFER_HOME=/opt/freesurfer
-# source $FREESURFER_HOME/SetUpFreeSurfer.sh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/zairex/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/zairex/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/zairex/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/zairex/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+# Start starship
+eval "$(starship init bash)"
