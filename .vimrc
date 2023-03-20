@@ -1,4 +1,7 @@
 set visualbell
+set nocp
+set list
+set listchars=nbsp:¬,trail:•,tab:>-
 syntax on
 filetype indent plugin on
 set background=dark
