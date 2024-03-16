@@ -1,0 +1,4 @@
+# .bashrc
+
+test -r $HOME/.bashrc-custom && source $HOME/.bashrc-custom
+
