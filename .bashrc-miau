@@ -6,8 +6,5 @@ xset -b
 alias connect_screen='xrandr --output HDMI-2 --mode 1920x1080 --left-of eDP-1'
 alias disconnect_screen='xrandr --output HDMI-2 --off'
 
-# add cgoban alias
-alias cgoban='java -jar /home/zairex/Games/cgoban-h.jar'
-
 # Start starship
 eval "$(starship init bash)"
