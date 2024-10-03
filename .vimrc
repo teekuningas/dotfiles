@@ -27,6 +27,10 @@ autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
 " for js
 autocmd Filetype js setlocal ts=2 sts=2 sw=2 expandtab
 
+" for less
+autocmd Filetype less setlocal ts=2 sts=2 sw=2 expandtab
+
+
 " for .overrides and .variables (less)
 autocmd BufNewFile,BufRead *.overrides set ft=less
 autocmd BufNewFile,BufRead *.variables set ft=less
@@ -34,6 +38,9 @@ autocmd BufNewFile,BufRead *.variables set ft=less
 " for zcml and pt
 autocmd BufNewFile,BufRead *.zcml set ft=xml
 autocmd BufNewFile,BufRead *.pt set ft=html syntax=xml
+
+" for c
+autocmd FileType c setlocal noexpandtab ts=8 sts=8 sw=8
 
 " swapfiles
 set swapfile
