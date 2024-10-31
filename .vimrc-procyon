@@ -6,7 +6,8 @@ endif
 
 lua << EOF
 require('gen').setup({
-    model = "llama3.1"
+    model = "llama3.1",
+    display_mode = "split"
 })
+vim.keymap.set({ 'n', 'v' }, '<Tab>', ':Gen<CR>')
 EOF
-
