@@ -1,0 +1,12 @@
+if filereadable(expand("~/.vimrc-custom"))
+    source ~/.vimrc-custom
+endif
+
+" neovim plugins
+
+lua << EOF
+require('gen').setup({
+    model = "llama3.1"
+})
+EOF
+
