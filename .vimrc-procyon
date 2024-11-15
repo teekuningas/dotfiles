@@ -5,9 +5,34 @@ endif
 " neovim plugins
 
 lua << EOF
-require('gen').setup({
-    model = "llama3.1",
-    display_mode = "split"
+-- require('gen').setup({
+--     model = "llama3.1",
+--     display_mode = "split"
+-- })
+-- vim.keymap.set({ 'n', 'v' }, '<Tab>', ':Gen<CR>')
+require('gp').setup({
+    providers = {
+        ollama = {
+            disable = false,
+            endpoint = "https://jyu2401-62.tail5b278e.ts.net/v1/chat/completions"
+        },
+    },
+    default_command_agent = 'jyu2401-llama',
+    default_chat_agent = 'jyu2401-llama',
+    agents = {
+        {
+            provider = "ollama",
+            name = "jyu2401-llama",
+            chat = false,
+            command = true,
+            model = {
+                model = "llama3.1:70b",
+                temperature = 0.4,
+                top_p = 1,
+                min_p = 0.05,
+            },
+            system_prompt = require("gp.defaults").code_system_prompt,
+        }
+    }
 })
-vim.keymap.set({ 'n', 'v' }, '<Tab>', ':Gen<CR>')
 EOF
