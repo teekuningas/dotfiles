@@ -8,3 +8,7 @@ then
 else
   eval "$(starship init bash)"
 fi
+
+export NETRC=/etc/nix/netrc
+
+alias vpnup='sudo openconnect --useragent="AnyConnect-compatible OpenConnect VPN agent" vpn.jyu.fi/sysadmin-kp'

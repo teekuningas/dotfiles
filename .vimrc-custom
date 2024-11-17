@@ -6,6 +6,9 @@ syntax on
 filetype indent plugin on
 set background=dark
 
+" allows copy into and out from clipboard
+set mouse=
+
 " Set whitespace managing for every filetype, overriding standard
 autocmd FileType xml,htmldjango,python,python.django setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType javascript,js,jsx,ts setlocal ts=2 sts=2 sw=2 expandtab
