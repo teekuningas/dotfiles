@@ -1,9 +1,11 @@
 set visualbell
+set termguicolors
 set nocp
 set list
 set listchars=nbsp:¬,trail:•,tab:>-
 syntax on
 filetype indent plugin on
+colorscheme desert
 set background=dark
 
 " allows copy into and out from clipboard
@@ -44,6 +46,8 @@ autocmd BufNewFile,BufRead *.pt set ft=html syntax=xml
 
 " for c
 autocmd FileType c setlocal noexpandtab ts=8 sts=8 sw=8
+autocmd FileType cpp setlocal noexpandtab ts=8 sts=8 sw=8
+autocmd FileType h setlocal noexpandtab ts=8 sts=8 sw=8
 
 " swapfiles
 set swapfile
