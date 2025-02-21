@@ -10,12 +10,5 @@ alias nix-shell='TMPDIR=/run/user/${UID} nix-shell'
 alias nix-build='TMPDIR=/run/user/${UID} nix-build'
 alias nix='TMPDIR=/run/user/${UID} nix'
 
-if ! command -v starship &> /dev/null
-then
-  echo "Starship not found. Not running.."
-else
-  eval "$(starship init bash)"
-fi
-
 PATH="$HOME/.npm-global/bin:$PATH"
 export PATH
