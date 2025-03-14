@@ -10,6 +10,7 @@ set background=dark
 
 " allows copy into and out from clipboard
 set mouse=
+set clipboard=unnamedplus
 
 " Set whitespace managing for every filetype, overriding standard
 autocmd FileType xml,htmldjango,python,python.django setlocal ts=4 sts=4 sw=4 expandtab
