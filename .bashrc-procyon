@@ -2,6 +2,15 @@
 
 test -r $HOME/.bashrc-custom && source $HOME/.bashrc-custom
 
+if ! command -v starship &> /dev/null
+then
+  echo "Starship not found. Not running.."
+else
+  eval "$(starship init bash)"
+fi
+
 export NETRC=/etc/nix/netrc
 
 alias vpnup='sudo openconnect --useragent="AnyConnect-compatible OpenConnect VPN agent" vpn.jyu.fi/sysadmin-kp'
+
+export PATH=${HOME}/.local/bin:$PATH
