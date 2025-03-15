@@ -2,6 +2,9 @@
 
 test -r $HOME/.bashrc-custom && source $HOME/.bashrc-custom
 
+# Set neovim as default vim
+alias vim="nvim"
+
 # Both are needed to get glxinfo output the correct driver
 export MESA_D3D12_DEFAULT_ADAPTER_NAME=NVIDIA
 export GALLIUM_DRIVER=d3d12
