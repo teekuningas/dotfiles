@@ -1,8 +1,8 @@
 -- init.lua
 
 -- Load the Vim configuration from the .vimrc-procyon
-if vim.fn.filereadable(vim.fn.expand("~/.vimrc-procyon")) then
-  vim.cmd('source ~/.vimrc-procyon')
+if vim.fn.filereadable(vim.fn.expand("~/.vimrc-custom")) then
+  vim.cmd('source ~/.vimrc-custom')
 end
 
 -- Bootstrap lazy.nvim
@@ -79,7 +79,7 @@ require('lazy').setup({
           },
           filesystem = {
             filtered_items = {
-              hide_dotfiles = true,        -- Hide dotfiles
+              hide_dotfiles = false,        -- Hide dotfiles
               hide_gitignored = true,      -- Hide gitignored files
             },
           }
