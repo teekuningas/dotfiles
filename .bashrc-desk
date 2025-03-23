@@ -11,3 +11,6 @@ AIDER_EDITOR_EDIT_FORMAT=editor-whole
 AIDER_MAP_TOKENS=8192
 AIDER_MAX_CHAT_HISTORY_TOKENS=32768
 AIDER_AUTO_ACCEPT_ARCHITECT=false
+
+# for uv binaries
+export PATH="/home/zairex/.local/bin:$PATH"
