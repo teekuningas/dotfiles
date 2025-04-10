@@ -31,7 +31,6 @@ export OLLAMA_HOST=https://jyu2401-62.tail5b278e.ts.net/ollamapi
 # export AIDER_AUTO_ACCEPT_ARCHITECT=false
 #
 # aider (azure)
-# export AZURE_API_KEY=<key>
 export AZURE_API_VERSION=2024-12-01-preview
 export AZURE_API_BASE=https://erpipehe-openai.openai.azure.com
 export AIDER_MODEL=azure/o3-mini

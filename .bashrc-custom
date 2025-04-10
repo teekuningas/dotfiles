@@ -24,9 +24,7 @@ run_on_prompt_command()
 
 PROMPT_COMMAND="run_on_prompt_command"
 
-if ! command -v starship &> /dev/null
-then
-  echo "Starship not found. Not running.."
-else
-  eval "$(starship init bash)"
+# Possibly read secrets to env vars
+if [ -f .env-secrets ]; then
+  export $(grep -v '^#' .env-secrets | xargs)
 fi
