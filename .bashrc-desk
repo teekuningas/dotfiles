@@ -1,5 +1,14 @@
 test -r $HOME/.bashrc-custom && source $HOME/.bashrc-custom
 
+if ! command -v starship &> /dev/null
+then
+  echo "Starship not found. Not running.."
+else
+  eval "$(starship init bash)"
+fi
+
+# Environment variables
+
 # llm, files-to-prompt
 export OLLAMA_HOST=https://jyu2401-62.tail5b278e.ts.net/ollamapi
 
@@ -24,6 +33,7 @@ export AIDER_EDITOR_EDIT_FORMAT=editor-diff
 export AIDER_MAP_TOKENS=8192
 export AIDER_MAX_CHAT_HISTORY_TOKENS=32768
 export AIDER_AUTO_ACCEPT_ARCHITECT=false
+export AIDER_REASONING_EFFORT=high
 
 # for uv binaries
 export PATH="/home/zairex/.local/bin:$PATH"
