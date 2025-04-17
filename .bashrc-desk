@@ -7,33 +7,37 @@ else
   eval "$(starship init bash)"
 fi
 
+# for uv binaries
+export PATH="/home/zairex/.local/bin:$PATH"
+
 # Environment variables
 
 # llm, files-to-prompt
 export OLLAMA_HOST=https://jyu2401-62.tail5b278e.ts.net/ollamapi
 
-# # aider (loacl)
-# export OLLAMA_API_BASE=https://jyu2401-62.tail5b278e.ts.net/ollamapi
-# export AIDER_MODEL=ollama_chat/deepseek-r1:70b
-# export AIDER_WEAK_MODEL=ollama/qwen2.5-coder:32b-instruct-q8_0
-# export AIDER_EDITOR_MODEL=ollama/qwen2.5-coder:32b-instruct-q8_0
-# export AIDER_EDITOR_EDIT_FORMAT=editor-whole
-# export AIDER_MAP_TOKENS=8192
-# export AIDER_MAX_CHAT_HISTORY_TOKENS=32768
-# export AIDER_AUTO_ACCEPT_ARCHITECT=false
+# aider (local)
+export OLLAMA_API_BASE=https://jyu2401-62.tail5b278e.ts.net/ollamapi
 
 # aider (azure)
 export AZURE_API_VERSION=2024-12-01-preview
 export AZURE_API_BASE=https://erpipehe-openai.openai.azure.com
-export AIDER_MODEL=azure/o3-mini
-export AIDER_EDIT_FORMAT=diff
-export AIDER_WEAK_MODEL=azure/gpt-4o-mini
-export AIDER_EDITOR_MODEL=azure/gpt-4o
-export AIDER_EDITOR_EDIT_FORMAT=editor-diff
+
+# aider general defaults
 export AIDER_MAP_TOKENS=8192
 export AIDER_MAX_CHAT_HISTORY_TOKENS=32768
 export AIDER_AUTO_ACCEPT_ARCHITECT=false
-export AIDER_REASONING_EFFORT=high
+export AIDER_REASONING_EFFORT=medium
 
-# for uv binaries
-export PATH="/home/zairex/.local/bin:$PATH"
+# # aider ollama defaults
+# export AIDER_MODEL=ollama_chat/deepseek-r1:70b
+# export AIDER_WEAK_MODEL=ollama/qwen2.5-coder:32b-instruct-q8_0
+# export AIDER_EDITOR_MODEL=ollama/qwen2.5-coder:32b-instruct-q8_0
+# export AIDER_EDITOR_EDIT_FORMAT=editor-whole
+
+# # aider (azure)
+# export AIDER_MODEL=azure/o3-mini
+# export AIDER_EDIT_FORMAT=diff
+# export AIDER_WEAK_MODEL=azure/gpt-4o-mini
+# export AIDER_EDITOR_MODEL=azure/gpt-4o
+# export AIDER_EDITOR_EDIT_FORMAT=editor-diff
+
