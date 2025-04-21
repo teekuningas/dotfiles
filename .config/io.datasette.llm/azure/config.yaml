@@ -1,0 +1,39 @@
+- model_id: gpt-4o-mini
+  model_name: gpt-4o-mini
+  api_base: https://erpipehe-openai.openai.azure.com/
+  api_version: '2024-12-01-preview'
+  vision: true
+
+- model_id: gpt-4o
+  model_name: gpt-4o
+  api_base: https://erpipehe-openai.openai.azure.com/
+  api_version: '2024-12-01-preview'
+  vision: true
+
+- model_id: o3-mini
+  model_name: o3-mini
+  api_base: https://erpipehe-openai.openai.azure.com/
+  api_version: '2024-12-01-preview'
+
+- model_id: o4-mini
+  model_name: o4-mini
+  api_base: https://erpipehe-openai.openai.azure.com/
+  api_version: '2024-12-01-preview'
+
+- model_id: gpt-4.1-mini
+  model_name: gpt-4.1-mini
+  api_base: https://erpipehe-openai.openai.azure.com/
+  api_version: '2024-12-01-preview'
+  vision: true
+
+- model_id: gpt-4.1
+  model_name: gpt-4.1
+  api_base: https://erpipehe-openai.openai.azure.com/
+  api_version: '2024-12-01-preview'
+  vision: true
+
+- model_id: text-embedding-3-small
+  embedding_model: true
+  model_name: text-embedding-3-small
+  api_base: https://erpipehe-openai.openai.azure.com/
+  api_version: '2024-12-01-preview'
