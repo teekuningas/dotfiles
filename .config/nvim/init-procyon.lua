@@ -31,39 +31,6 @@ require('lazy').setup({
   spec = {
     -- Existing plugin configurations can go here
     {
-      "robitx/gp.nvim",
-      config = function()
-        local conf = {
-          providers = {
-            ollama = {
-              disable = false,
-              endpoint = "https://jyu2401-62.tail5b278e.ts.net/v1/chat/completions"
-            },
-          },
-          default_command_agent = 'jyu2401-llama',
-          default_chat_agent = 'jyu2401-llama',
-          agents = {
-            {
-              provider = "ollama",
-              name = "jyu2401-llama",
-              chat = false,
-              command = true,
-              model = {
-                model = "gemma3:27b",
-                temperature = 0.4,
-                top_p = 1,
-                min_p = 0.05,
-              },
-              system_prompt = require("gp.defaults").code_system_prompt,
-            }
-          }
-        }
-        require("gp").setup(conf)
-        -- Setup shortcuts here
-        -- Example: vim.keymap.set({ 'n', 'v' }, '<Tab>', ':Gen<CR>')
-      end
-    },
-    {
       "nvim-neo-tree/neo-tree.nvim",
       branch = "v3.x",
       dependencies = {
