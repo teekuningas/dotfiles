@@ -16,7 +16,7 @@ export PATH="/home/zairex/.local/bin:$PATH"
 export OLLAMA_HOST=https://jyu2401-62.tail5b278e.ts.net/ollamapi
 
 # aider (local)
-# export OLLAMA_API_BASE=https://jyu2401-62.tail5b278e.ts.net/ollamapi
+export OLLAMA_API_BASE=https://jyu2401-62.tail5b278e.ts.net/ollamapi
 
 # aider (azure)
 export AZURE_API_VERSION=2024-12-01-preview
@@ -28,21 +28,3 @@ export AIDER_MAX_CHAT_HISTORY_TOKENS=16384
 export AIDER_AUTO_ACCEPT_ARCHITECT=false
 export AIDER_REASONING_EFFORT=medium
 export AIDER_EDITOR=vim
-
-# # aider ollama defaults
-# export AIDER_MODEL=ollama_chat/deepseek-r1:70b
-# export AIDER_WEAK_MODEL=ollama/qwen2.5-coder:32b-instruct-q8_0
-# export AIDER_EDITOR_MODEL=ollama/qwen2.5-coder:32b-instruct-q8_0
-# export AIDER_EDITOR_EDIT_FORMAT=editor-whole
-
-# # aider (azure)
-# export AIDER_MODEL=azure/o3-mini
-# export AIDER_EDIT_FORMAT=diff
-# export AIDER_WEAK_MODEL=azure/gpt-4o-mini
-# export AIDER_EDITOR_MODEL=azure/gpt-4o
-# export AIDER_EDITOR_EDIT_FORMAT=editor-diff
-
-# Komennot:
-# $ aider --model azure/o4-mini
-# $ aider --model gemini/gemini-2.5-pro-preview-03-25
-# $ aider --model gemini/gemini-2.5-pro-exp-03-25
