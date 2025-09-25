@@ -12,6 +12,8 @@ export PATH="/home/zairex/.local/bin:$PATH"
 
 # Environment variables
 
+export AZURE_RESOURCE_NAME=erpipehe-openai
+
 # llm, files-to-prompt
 export OLLAMA_HOST=https://jyu2401-62.tail5b278e.ts.net/ollamapi
 
@@ -23,7 +25,7 @@ export AZURE_API_VERSION=2024-12-01-preview
 export AZURE_API_BASE=https://erpipehe-openai.openai.azure.com
 
 # aider general defaults
-export AIDER_MAP_TOKENS=4096
+export AIDER_MAP_TOKENS=2048
 export AIDER_MAX_CHAT_HISTORY_TOKENS=16384
 export AIDER_AUTO_ACCEPT_ARCHITECT=false
 export AIDER_REASONING_EFFORT=medium
